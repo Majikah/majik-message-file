@@ -1,0 +1,56 @@
+{
+  "name": "@majikah/majik-message-file",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Ecosystem-specific, post-quantum file encryption class for Majik Message handling storage routing, R2 bindings, and automatic WebP conversion.",
+  "keywords": [
+    "majikah",
+    "majik-message",
+    "post-quantum",
+    "encryption",
+    "ml-kem",
+    "crypto",
+    "cloudflare-r2",
+    "file-encryption",
+    "typescript"
+  ],
+  "license": "Apache-2.0",
+  "author": "Zelijah",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Majikah/majik-message-file.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/jedlsf"
+  },
+  "homepage": "https://github.com/Majikah/majik-message-file#readme",
+  "bugs": {
+    "url": "https://github.com/Majikah/majik-message-file/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "package": "npm run build && npm version patch && git push && git push --tags",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@bokuweb/zstd-wasm": "^0.0.27",
+    "@majikah/majik-file": "^0.2.3",
+    "@majikah/majik-key": "^0.3.3",
+    "@majikah/majik-signature": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
