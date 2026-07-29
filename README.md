@@ -111,6 +111,7 @@ otherwise (permanent)      → files/user/<userId>/<fileHash>.mjkb
 npm install @majikah/majik-message-file @majikah/majik-file
 ```
 
+
 `@majikah/majik-file` is a peer dependency — `MajikMessageFile` extends `MajikFile` directly, so both packages need to resolve to compatible versions. Requires the same browser-like environment as the base package (Web Crypto, `Blob`, `Canvas` for WebP conversion).
 
 ---
