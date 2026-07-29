@@ -1,6 +1,7 @@
 export * from "./core/utils";
-export * from "./core/crypto/constants";
+export * from "./core/validator";
 
 export type * from "./core/types";
 export * from "./majik-message-file";
-export * from "./core/error";
+
+export * from "@majikah/majik-file";
