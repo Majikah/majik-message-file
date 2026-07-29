@@ -1,7 +1,7 @@
 {
   "name": "@majikah/majik-message-file",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Ecosystem-specific, post-quantum file encryption class for Majik Message handling storage routing, R2 bindings, and automatic WebP conversion.",
   "keywords": [
     "majikah",
