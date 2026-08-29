@@ -172,6 +172,7 @@ export class MajikMessageFile extends MajikFile {
       conversationId = null,
       userId,
       compressionLevel,
+      compressor,
       context,
     } = options;
 
@@ -207,6 +208,7 @@ export class MajikMessageFile extends MajikFile {
       mimeType,
       bypassSizeLimit,
       compressionLevel,
+      compressor,
       preProcessExtra: { context } satisfies MessagePreProcessExtra,
     });
 
@@ -237,6 +239,8 @@ export class MajikMessageFile extends MajikFile {
       timestamp: now,
       last_update: now,
       signature: null,
+      compression_level: compressionLevel,
+      compression_alg: core.compressionAlg,
       r2_key: r2Key,
       storage_type: isTemporary ? "temporary" : "permanent",
       is_shared: isShared,
